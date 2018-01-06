@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Конфигуратор</title>
+  <!-- Стили -->
+  <link rel="stylesheet" href="./public/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./public/css/index.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Конфигуратор</h1>
+    <div class="row">
+      <!-- Левая часть -->
+      <div class="col-md-4">
+        <!-- Тип товара -->
+        <h4>Тип сенсора</h4>
+        <div class="type">
+          <select name="type" id="type" class="form-control">
+            <option value="" selected>Все</option>
+          </select>
+        </div>
+        <!-- Категория товара -->
+        <h4>Акции</h4>
+        <div class="category">
+          <select name="category" id="category" class="form-control">
+            <option value="" selected>Все</option>
+          </select>
+        </div>
+        <!-- Цвет товара -->
+        <h4>Цвет</h4>
+        <div class="color">
+          <div class="radio">
+            <label>
+              <input type="radio" name="color" value="" checked>
+              Все
+            </label>
+          </div>
+        </div>
+        <!-- Параметр товара -->
+        <h4>Тип мыши</h4>
+        <div class="parameter">
+          <div class="radio">
+            <label>
+              <input type="radio" name="parameter" value="" checked>
+              Все
+            </label>
+          </div>
+        </div>
+        <h4>Тип питания</h4>
+        <div class="parameter">
+          <div class="radio">
+            <label>
+              <input type="radio" name="" value="" checked>
+              Все
+            </label>
+          </div>
+        </div>
+      </div>
+      <!-- Правая часть -->
+      <div class="col-md-8">
+        <!-- Товары -->
+        <div class="row products"></div>
+      </div>
+    </div>
+  </div>
+  <!-- Скрипты -->
+  <script src="./public/js/jquery-3.2.1.min.js"></script>
+  <script src="./public/js/products.js"></script>
+  <script src="./public/js/index.js"></script>
+</body>
+
+</html>
